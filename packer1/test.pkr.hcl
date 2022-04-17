@@ -40,7 +40,7 @@ source "vmware-iso" "basic-example" {
 }
 
 build {
-  sources = ["packer_fedora35arm"]
+  sources = ["sources.vmware-iso.basic-example"]
 
   post-processor "vagrant" {
     compression_level = 0
